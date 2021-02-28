@@ -1,0 +1,507 @@
+body {
+    margin: 0;
+    padding-top: 70px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    overflow: auto;
+}
+
+p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+h1 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+h2 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #5f5f5f;
+}
+
+h3 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+h4 {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #5f5f5f;
+}
+
+strong {
+    font-weight: 500;
+}
+
+a {
+    color: inherit;
+}
+
+/*HEADER*/
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    font-size: 12px;
+    z-index: 10;
+}
+
+header ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    left: 40px;
+    right: auto;
+}
+
+header ul:nth-of-type(even) {
+    left: auto;
+    right: 40px;
+}
+
+header li {
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+header ul:nth-of-type(even) li {
+    margin: 0 0 0 30px;
+}
+
+/*INDEX*/
+
+.index {
+    width: 100%;
+    height: calc(100vh - 240px);
+    overflow: auto;
+    padding: 20px 0 40px 0;
+}
+
+.index div {
+    width: 360px;
+    max-width: calc(50vw - 60px);
+    float: left;
+    overflow: auto;
+    margin-left: 40px;
+}
+
+.index img {
+    width: calc(50vw - 40px);
+    display: block;
+    float: right;
+    margin-right: 40px;
+}
+
+.panel {
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    padding: 40px 0 60px 0;
+}
+
+.panel.grey {
+    background-color: #d8d8d8;
+}
+
+.panel.black {
+    background-color: #2d2e2f;
+    color: white;
+}
+
+.panel > h1 {
+    display: inline-block;
+    margin: 0 20px 40px 40px;
+}
+
+.panel .featured {
+    width: calc(100vw - 60px);
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.panel .featured div {
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+    overflow: auto;
+    float: left;
+}
+
+.panel .featured div img {
+    width: 100%;
+    min-height: 240px; /*TEMPORARY*/
+    background-color: white;
+    margin-bottom: 8px;
+    float: left;
+}
+
+.panel .featured span {
+    float: left;
+    width: calc(100% - 60px);
+}
+
+.panel .featured div a > h4 {
+    float: right;
+    max-width: 60px;
+    overflow-wrap: break-word;
+    text-align: right;
+    pointer-events: none;
+}
+
+.single div {
+    position: absolute;
+    width: 360px;
+    max-width: calc(50vw - 60px);
+    float: left;
+    overflow: auto;
+    margin-left: 40px;
+    top: 40px; bottom: 60px;
+}
+
+.single div p {
+    position: absolute;
+    bottom: 0;
+}
+
+.single img {
+    width: calc(50vw - 40px);
+    display: block;
+    float: right;
+    margin-right: 40px;
+}
+
+/*NAVIGATION*/
+
+nav {
+    position: fixed;
+    height: calc( 100vh - 79px);
+    width: 160px;
+    overflow: scroll;
+    margin: 25px 40px 0 40px;
+    font-size: 11px;
+}
+
+nav::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul:last-of-type {
+    margin-bottom: 40px;
+}
+
+nav ul li {
+    margin: 0 0 14px 0;
+}
+
+nav ul ul {
+    margin: 0 0 0 10px;
+}
+
+nav ul ul li:nth-of-type(1) {
+    color: black;
+}
+
+nav ul ul li {
+    color: #5f5f5f;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav .active, nav a:hover {
+    text-decoration: underline;
+}
+
+nav .gradient {
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    height: 40px;
+    content: "";
+    display: inline-block;
+    background: -webkit-linear-gradient(top, rgba(256,256,256,0) 0%,rgba(256,256,256,0.5) 10%,rgba(256,256,256,1) 80%);
+}
+
+/*HOLDER WRAPPER*/
+
+.holder {
+    position: fixed;
+    height: calc( 100vh - 90px);
+    overflow: scroll;
+    width: calc(100vw - 270px);
+    right: 0;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+
+.holder .product a {
+    text-decoration: none;
+}
+
+.info {
+    overflow: visible;
+    margin-bottom: 30px;
+}
+
+.breadcrumbs {
+    list-style: none;
+    margin: 0 0 0 10px;
+    padding: 0;
+    float: left;
+    display:flex;
+    align-items:center;
+}
+
+.holder .breadcrumbs:after {
+    content: "09 Results";
+    color: #5f5f5f;
+}
+
+.breadcrumbs li {
+    float: left;
+    margin-right: 10px;
+    padding: 5px 0;
+    display:flex;
+    align-items:center;
+}
+
+.breadcrumbs li:not(:last-child):after {
+    display: inline-block;
+    content: ' ';
+    margin-left: 10px;
+    margin-top: -1px;
+    background-image: url('../img/chevron.svg');
+    background-size: 9px 9px;
+    height: 9px;
+    width: 9px;
+}
+
+.breadcrumbs li:last-of-type {
+    color: black;
+    text-decoration: none;
+}
+
+.holder .sort {
+    position: relative;
+    float: right;
+    margin: 0 10px 0 0;
+    padding: 5px 0 5px 10px;
+    overflow: visible;
+    display:flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+.holder .sort:after {
+    display: inline-block;
+    content: ' ';
+    margin-left: 4px;
+    background-image: url('../img/chevron.svg');
+    background-size: 9px 9px;
+    height: 9px;
+    width: 9px;
+    transform: rotate(90deg);
+}
+
+.holder .sort span {
+    margin-left: 5px;
+}
+
+.sortMenu {
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    padding: 95px 40px 0 40px;
+    background-color: gainsboro;
+    top: 0;
+    left: 100vw;
+    z-index: 200;
+    box-shadow: -1px 0 10px 1px rgba(0, 0, 0, 0.05);
+        -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sortMenu .close {
+    position: absolute;
+    top: 25px; right: 35px;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sortMenu ul {
+    margin: 9px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sortMenu ul li {
+    margin-bottom: 14px;
+}
+
+.sortMenu ul .active {
+    text-decoration: underline;
+}
+
+/*ENTRIES*/
+
+.holder .product {
+    width: calc(33.33% - 20px);
+    overflow: auto;
+    margin: 0 10px 20px 10px;
+    float: left;
+}
+
+.holder .product .wrapper {
+    width: 100%;
+    height: 16vw;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 8px;
+    background-color: gainsboro;
+}
+
+.holder .product .wrapper img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: auto;
+    width: 100%;
+    -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.holder .product span {
+    float: left;
+    width: calc(100% - 70px);
+}
+
+.holder .product > h4,
+.holder .product a > h4 {
+    float: right;
+    max-width: 60px;
+    overflow-wrap: break-word;
+    text-align: right;
+    pointer-events: none;
+}
+
+/*PRODUCT*/
+
+.productWrapper {
+    position: fixed;
+    height: calc( 100vh - 90px);
+    overflow: scroll;
+    width: calc(100vw - 60px);
+    margin: 20px 0 0 30px;
+    padding-right: 30px;
+}
+
+.productWrapper .breadcrumbs {
+    width: calc(100% - 20px);
+}
+
+.productWrapper .gallery {
+    width: calc(100vw - 440px);
+    float: left;
+    overflow: auto;
+}
+
+.productWrapper .gallery img {
+    width: calc(50% - 20px);
+    min-height: 22vw; /*TEMPORARY*/
+    background-color: gainsboro;
+    margin: 0 10px 20px 10px;
+    float: left
+}
+
+.productWrapper .description {
+    width: 360px;
+    position: fixed;
+    height: calc( 100vh - 104px);
+    right: 40px;
+    overflow: scroll;
+}
+
+.productWrapper .description::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.productWrapper .description p {
+    clear: both;
+    margin-bottom: 30px;
+}
+
+.productWrapper .description span {
+    float: left;
+    width: calc(100% - 70px);
+    margin-bottom: 20px;
+}
+
+.productWrapper .description > h4 {
+    float: right;
+    max-width: 60px;
+    overflow-wrap: break-word;
+    text-align: right;
+}
+
+.description .button {
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    background-color: #333333;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.description .more {
+    overflow: auto;
+}
+
+.description .more h1 {
+    display: inline;
+    float: left;
+    margin-bottom: 4px;
+}
+
+.description .more img {
+    height: 14px;
+    margin-top: 4px;
+    float: right;
+    display: none;
+}
+
+.description .disclaimer {
+    color: #5f5f5f;
+}
