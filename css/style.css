@@ -116,7 +116,7 @@ header ul:nth-of-type(even) li {
     position: relative;
     width: 100%;
     overflow: auto;
-    padding: 40px 0 60px 0;
+/*    padding: 40px 0 60px 0;*/
 }
 
 .panel.grey {
@@ -130,7 +130,7 @@ header ul:nth-of-type(even) li {
 
 .panel > h1 {
     display: inline-block;
-    margin: 0 20px 40px 40px;
+    margin: 40px 20px 40px 40px;
 }
 
 .panel .featured {
@@ -141,7 +141,7 @@ header ul:nth-of-type(even) li {
 
 .panel .featured div {
     width: calc(33.33% - 20px);
-    margin: 0 10px;
+    margin: 0 10px 60px 10px;
     overflow: auto;
     float: left;
 }
@@ -169,11 +169,11 @@ header ul:nth-of-type(even) li {
 
 .single div {
     position: absolute;
-    width: 360px;
-    max-width: calc(50vw - 60px);
+    width: calc(50vw - 80px);
+    max-width: 500px;
     float: left;
     overflow: auto;
-    margin-left: 40px;
+    margin: 0 40px;
     top: 40px; bottom: 60px;
 }
 
@@ -183,10 +183,9 @@ header ul:nth-of-type(even) li {
 }
 
 .single img {
-    width: calc(50vw - 40px);
+    width: 50vw;
     display: block;
     float: right;
-    margin-right: 40px;
 }
 
 /*NAVIGATION*/
@@ -267,7 +266,7 @@ nav .gradient {
 
 .info {
     overflow: visible;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
 }
 
 .breadcrumbs {
